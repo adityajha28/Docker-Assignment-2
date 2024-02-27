@@ -1,0 +1,84 @@
+table {
+    /* font-family: Helvetica , Arial,  sans-serif; */
+    /* border-collapse: collapse; */
+    width: 90vw;
+    max-width: 95vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    border-collapse:separate;
+    border:solid black 0px;
+    border-radius:15px;
+    overflow: hidden;
+}
+.tableDiv {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    /* background-color: #4949f0; */
+    min-height: 88vh;
+}
+/* tr{height: auto;} */
+  td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2;}
+  
+  tr:hover {background-color: #ddd;}
+  
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:coral;
+    color: white;
+  }
+  .complete {
+    text-decoration: line-through;
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 45px;
+    min-width: 210px;
+  }
+  .editBtn {
+    width:50px;
+    background-color: #4949f0;
+    color: white;
+  }
+  .dltBtn {
+    width:60px;
+    background-color: #dc143c;
+    color: white;
+  }
+  .doneBtn {
+    width:90px;
+    color: white;
+  }
+  .notDoneBtn {
+    background-color: #ffff40;
+    width:90px;
+    color: black;
+  }
+  .editBtn:hover{
+    background-color: #3636b3;
+  }
+  .editBtn:active{
+      background-color: #5e5ef2;
+  }
+  .dltBtn:hover{
+    background-color: #b21131;
+  }
+  .dltBtn:active{
+      background-color: #e3284e;
+  }
+  .notDoneBtn:hover{
+    background-color: #cdcd00;
+  }
+  .notDoneBtn:active{
+      background-color: #ffff93;
+  }

@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: aditya280102/todoapp-frontend
+    build:
+      context: ./todo-frontend
+      dockerfile: Dockerfile
+     
+    ports:
+      - "3000:3000"
+
+  backend:
+    image: aditya280102/todoapp-backend
+    build:
+      context: ./todo-backend
+      dockerfile: Dockerfile
+    
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo
+    networks:
+      - todo-network
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    networks:
+      - todo-network
+
+networks:
+  todo-network:

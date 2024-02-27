@@ -1,0 +1,64 @@
+.editTodoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    /* background-image: url(../images/bg.jpg); */
+    background-color: aliceblue;
+    height: 88vh;
+    z-index: 0;
+}
+.editBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(41, 228, 172, 0.382);
+    width: 400px;
+    height: 530px;
+    border-radius: 5%;
+    margin-top: 3%;
+
+}
+.editTodoContainer form{
+    /* background-color: aquamarine; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    width: 300px;
+}
+.editTodoContainer input{
+    width: 300px;
+    height: 30px;
+
+}
+.editTodoContainer select{
+    width: 305px;
+    height: 30px;
+    margin: 0px;
+}
+.editTodoContainer textarea{
+    width: 300px;
+    height: 50px;
+    resize: none;
+}
+.editTodoContainer button{
+    width: 307px;
+    height: 40px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 15px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #92de1f;
+    font-weight: 600;
+    font-size: medium;
+}
+button:hover{
+    background-color: #669d15;
+}
+button:active{
+    background-color: #a7ee3d;
+}
+
